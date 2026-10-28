@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroChat • Welcome to the web!</title>
+  <link rel="stylesheet" href="/static/style.css?v=5">
+  <script src="/static/app.js?v=5" defer></script>
+</head>
+<body>
+  <main>
+    <div class="era-control"><span id="era-label">TIME CAPSULE · 1999</span><div class="era-actions"><button id="sound-toggle" type="button" aria-pressed="false">Sound: off</button><button id="era-toggle" type="button" aria-pressed="false">Modernize ↗ <b>2030</b></button></div></div>
+    <div class="topline"><span>★ WELCOME TO THE WORLD WIDE WEB ★</span><span>FRIDAY, SEPTEMBER 24, 1999</span></div>
+    <header><div class="brand"><span class="logo">R<span>↗</span></span><div><h1>Retro<span>Chat</span><sup>™</sup></h1><p>The future can wait. Let's talk.</p></div></div><div class="badge">100% NOSTALGIA<br><b>0% FUTURE</b></div></header>
+    <nav><span>File</span><span>Chat</span><a href="#about">About</a><span class="nav-right">● 56K MODEM CLUB</span></nav>
+    <div class="ticker">✦ Welcome to your friendly corner of the web! &nbsp; • &nbsp; Worth tying up the phone line. &nbsp; • &nbsp; It's 1999. ✦</div>
+    <div class="layout">
+      <aside>
+        <section class="panel"><h2>☻ USER CARD</h2><div class="profile"><div class="avatar">☺</div><b>Guest_001</b><small><i></i> Ready to chat</small></div><div class="stats"><span>Location <b>Internet cafe</b></span><span>Time <b>1999</b></span><span>Connection <b>56 kbps</b></span></div></section>
+        <section class="panel topics"><h2>✦ PICK A TOPIC</h2><button data-prompt="What can I do on the internet in 1999?">🌐 World wide web</button><button data-prompt="Can you recommend a great cassette album?">♫ Cassette player</button><button data-prompt="Which computer game should we play?">▣ Game break</button><button data-prompt="What do you think the year 2000 will be like?">✧ Towards 2000</button></section>
+        <div class="ad"><span>NEW!</span><b>Best viewed<br>with a cup<br>of tea.</b><div>♨</div><small>No cookies. Just biscuits.</small></div>
+      </aside>
+      <section class="window" aria-label="Chat window">
+        <div class="titlebar"><span>▣ &nbsp; RetroChat.exe — chat room</span><span aria-hidden="true">_ □ ×</span></div>
+        <div class="room"><div class="bot-icon">▤</div><div><b>RetroBot <span>BOT</span></b><small>Connecting from 1999...</small></div><span class="online" id="connection">● Connecting</span></div>
+        <div class="date">──────── SEPTEMBER 24, 1999 ────────</div>
+        <div id="messages" role="log" aria-live="polite" aria-relevant="additions"><article class="message bot"><div class="sender">RETROBOT <time>now</time></div><p>Hey, web traveler! 👋<br>I'm RetroBot. Winamp is playing, my tea is ready, and the modem hasn't disconnected. Yet.<br><br>What shall we talk about in this little corner of 1999?</p></article></div>
+        <div class="status-row"><div id="status" role="status">✦ A simple hello is all it takes.</div><button id="retry" type="button" hidden>↻ Try again</button></div>
+        <form id="chat-form"><label class="sr-only" for="message">Your message</label><div class="compose"><textarea id="message" rows="2" maxlength="4000" placeholder="Type a message…" required></textarea><button id="send" type="submit">Send <span>↵</span></button></div><div class="compose-foot"><span>Enter: send &nbsp; • &nbsp; Shift + Enter: new line</span><button id="clear" type="button">Clear chat</button></div></form>
+        <div class="window-foot"><span id="count">0 messages sent</span><span>Powered by Gemini</span></div>
+      </section>
+    </div>
+    <section class="compare-panel" aria-labelledby="compare-title">
+      <div class="compare-heading"><div><small>TWO ERAS, ONE QUESTION</small><h2 id="compare-title">How does time change the answer?</h2></div><span>1999 ↔ 2030</span></div>
+      <p>Ask both eras the same question. These replies are separate from your chat history.</p>
+      <form id="compare-form"><label for="compare-input" class="sr-only">Your question for both eras</label><div class="compare-compose"><input id="compare-input" maxlength="4000" required placeholder="How can I keep in touch with a friend?"><button id="compare-send" type="submit">Ask both eras ↗</button></div></form>
+      <div id="compare-status" role="status"></div>
+      <div class="compare-grid" hidden id="compare-results"><article class="compare-retro"><h3>▣ 1999 <small>Through the eyes of the past</small></h3><p id="answer-1999" aria-live="polite"></p></article><article class="compare-future"><h3>✧ 2030 <small>Fiction / speculation</small></h3><p id="answer-2030" aria-live="polite"></p></article></div>
+    </section>
+    <div class="save-note" id="save-note" role="status">Chats are stored separately for each era in this browser only.</div>
+    <footer id="about"><div><b>WHEN THE INTERNET WAS SLOWER AND CONVERSATIONS LASTED LONGER.</b><p>© 1999 RetroChat • A learning project built with Python + FastAPI.<br>RetroBot is an AI roleplaying 1999. It may make mistakes.</p></div><div class="counter"><span>VISITOR NUMBER</span><b>0 0 0 0 0 1</b><small>Best viewed in 800 × 600</small></div></footer>
+  </main><div id="time-portal" hidden aria-hidden="true"><div><span>ESTABLISHING TIME CONNECTION</span><b id="portal-year">2030</b><i>PAST ↔ FUTURE</i></div></div><div class="taskbar"><b>▦ Start</b><span>▣ RetroChat.exe</span><time>◷ 19:59</time></div>
+</body>
+</html>
